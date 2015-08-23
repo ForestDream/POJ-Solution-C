@@ -7,7 +7,7 @@ typedef struct Matrix{
 
 Matrix A = {{{1, 1}, {1, 0}}};
 Matrix E = {{{1, 0}, {0, 1}}};
-/* ¾ØÕó³Ë·¨ */
+/* çŸ©é˜µä¹˜æ³• */
 Matrix mul(Matrix a, Matrix b){
 	Matrix ans;
 	for(int i=0;i<2;i++){
@@ -31,7 +31,7 @@ int main(){
 	
 	while(scanf("%d", &n) != EOF && n != -1){
 		i = 0, ans = E;
-		/* ¾ØÕó¿ìËÙÃİ */
+		/* çŸ©é˜µå¿«é€Ÿå¹‚ */
 		while(n){
 			if(n&1)
 				ans =  mul(ans, pow_A[i]);
